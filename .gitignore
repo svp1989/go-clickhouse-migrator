@@ -1,0 +1,8 @@
+.idea
+docs
+!docs/README.md
+tmp
+.env
+coverage.txt
+migrations/*
+vendor

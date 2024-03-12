@@ -1,0 +1,21 @@
+Clickhouse migrator
+==============================================================================
+
+help    - description of the migration commands
+
+up      - command for applying migrations
+
+          [--force] - optional option rolls migrations ignoring the version
+
+diff    - shows which migrations have not been applied and which have been applied but
+          do not have migration files
+
+init    - creates a table in which migrations will be stored. Table name
+          it is taken from the environment variable ${MIGRATOR_MIGRATION_TABLE}
+
+version - the last migration applied
+
+gen     - creates a new migration the second argument passes the name of the migration
+          you should only generate new migrations using this command
+
+          [migration_name] - the required argument contains the name of the migration
